@@ -263,7 +263,7 @@ Navigation
     background-color:black;
     text-align:center;
     margin-top: 90px;
-    left: 50%;
+    left: 49.99%;
     transform: translate(-50%, 0);
   }
   
@@ -277,7 +277,7 @@ Navigation
     margin-right:30px;
     text-decoration: none;
     font-size: 14px;
-	line-height: 4px;
+	line-height: 7px;
   }
   
   .topnav a:hover {
@@ -304,7 +304,7 @@ Navigation
   }
   
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     .topnav a{display: none;}
     .topnav a.icon {
       float: right;
@@ -314,7 +314,7 @@ Navigation
     }
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;

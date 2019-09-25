@@ -23,7 +23,7 @@
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
    <style>
@@ -36,13 +36,26 @@
         /*
         .grid-item { width: 25%; }
         .grid-item--width3 { width: 50%; }*/
-        
-        .mySlides {display:none;}
-
 
         .img-fluid
         {
-            border-radius: 5px 5px;
+            border-radius: 5px;
+        }
+
+        #landscape, #hicks
+        {
+          transition: all 0.5s ease;
+        }
+
+        .header
+        {
+          position:fixed;
+          top:0;
+        }
+
+        #section1, #section2
+        {
+          height:120px;
         }
 
         </style>
@@ -50,7 +63,7 @@
 
 </head>
 
-<body class="landing-page" name="top" id="top" style="background : #a8cf8a;">
+<body class="landing-page" style="background : #a8cf8a;">
         <div class="header">
                 <img src="assets/img/logos/logo.png">
               </div>
@@ -59,69 +72,105 @@
                   <a href="./index.html">Home</a>
                   <a href="./about.html">About us</a>
                   <a href="./services.html">Services</a>
-                  <a href="./projects.html">Projects</a>
-                  <a href="./clients.html"  class="active">Our clients</a>
+                  <a href="./projects.html"  class="active">Projects</a>
+                  <a href="./clients.html">Our Clients</a>
                   <a href="./contact.html">Contact Us</a>
                   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                   </a>
               </div>
 
-                        
-                    <div class="container" style="text-align:center;">
-                  
-                      <p>&nbsp;</p>
-                      <p>&nbsp;</p>
-                      <p>&nbsp;</p>
-                      <p>&nbsp;</p>
-                      <p>&nbsp;</p>
-                      <p>&nbsp;</p>
-                      <p>&nbsp;</p>
-                      <h2>We have worked with</h2>
-                      <p>&nbsp;</p>
-                      <div class="row" style="text-align:center;">
-                          <div class="col-lg-4" style="text-align:center;">
-                            <img class="img-fluid" src="https://images.unsplash.com/photo-1565902608227-5b6c311817a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/><p>&nbsp;</p>
-                          </div>
-                          <div class="col-lg-4" style="text-align:center;">
-                            <img class="img-fluid" src="https://images.unsplash.com/photo-1565902608227-5b6c311817a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/><p>&nbsp;</p>
-                          </div>
-                          <div class="col-lg-4" style="text-align:center;">
-                            <img class="img-fluid" src="https://images.unsplash.com/photo-1565902608227-5b6c311817a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/><p>&nbsp;</p>
-                          </div>
-                        </div>
-                        <p>&nbsp;</p>
-                        <div class="row" style="text-align:center;">
-                          <div class="col-lg-4" style="text-align:center;">
-                            <img class="img-fluid" src="https://images.unsplash.com/photo-1565902608227-5b6c311817a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/><p>&nbsp;</p>
-                          </div>
-                          <div class="col-lg-4" style="text-align:center;">
-                            <img class="img-fluid" src="https://images.unsplash.com/photo-1565902608227-5b6c311817a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/><p>&nbsp;</p>
-                          </div>
-                          <div class="col-lg-4" style="text-align:center;">
-                            <img class="img-fluid" src="https://images.unsplash.com/photo-1565902608227-5b6c311817a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/><p>&nbsp;</p>
-                          </div>
-                        </div>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+              <p>&nbsp;</p>
+             
 
+                <div class="image_holder" style="text-align:center; width:100%;">
+                  <div class="row" style="text-align:center; width:100%; height:120px;">
+                    <div class="col-lg-6" id="section1" style="cursor:pointer; background:rgb(213, 223, 219);">
                         <p>&nbsp;</p>
+                      <h3 id="landscapeshow">CITYSCAPE</h3>
+                        
+                    </div>
+                    <div class="col-lg-6"  id="section2" style="cursor:pointer; background:rgb(167, 187, 152);">
                         <p>&nbsp;</p>
+                        <h3 id="hicksshow">HICKS</h3>
                         <p>&nbsp;</p>
-                        <h3>Testimonials</h3>
-                  </div>
-            
-                <div class="wrapper" style="background : #a8cf8a; width:100%; height:300px;">
-                  <div class="w3-content w3-section" style="height:500px; text-align:center; margin-top:80px!important; background : #a8cf8a; width:90%;">
-                    <div class="mySlides w3-animate-right" style="width:100%"><h4 class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"<br/><br/>- Lorem Ipsum</h4></div>
-                    <div class="mySlides w3-animate-right" style="width:100%"><h4 class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"<br/><br/>- Lorem Ipsum</h4></div>
-                    <div class="mySlides w3-animate-right" style="width:100%"><h4 class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"<br/><br/>- Lorem Ipsum</h4></div>
-                    <div class="mySlides w3-animate-right" style="width:100%"><h4 class="description">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"<br/><br/>- Lorem Ipsum</h4></div>
-                    
-                   <button id="change" class="w3-button w3-black w3-display-right" onclick="plusDivs()" style="visibility:none; opacity:0;">&#10095;</button>
+                      </div>
                   </div>
                 </div>
-                  
                 <p>&nbsp;</p>
-                        
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4" id="landscape">
+                      <a href="./azure.html">
+                        <img class="img-fluid" id="landscape" src="assets/img/kit/Cityscape/Azure/COVER.jpg">
+                      </a>
+                      <p>&nbsp;</p>
+                      </div>
+                    <div class="col-lg-4" id="landscape">
+                        <a href="./live-your-life-bar.html">
+                          <img class="img-fluid" id="landscape" src="assets/img/kit/Cityscape/Live Your Life Bar/COVER.jpg">
+                        </a>
+                        <p>&nbsp;</p>
+                    </div>
+                      <div class="col-lg-4" id="landscape">
+                          <a href="./darga-road.html">
+                            <img class="img-fluid" id="landscape" src="assets/img/kit/Cityscape/Darga Road/COVER.jpg">
+                          </a>
+                          <p>&nbsp;</p>
+                      </div>
+                  </div>
+                  <p>&nbsp;</p>
+                  
+                  <div class="row">
+                    <div class="col-lg-4" id="landscape">
+                      <a href="./marudhar-marbles.html">
+                        <img class="img-fluid" id="landscape" src="assets/img/kit/Cityscape/Marudhar Marbles/COVER.jpg">
+                        </a>
+                        <p>&nbsp;</p>
+                      </div>
+                  </div>
+                
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                  <div class="row">
+                      <div class="col-lg-4" id="hicks">
+                        <a href="./page2.html">
+                        <img class="img-fluid" id="hicks" src="assets/img/kit/Hicks.jpg">
+                        </a>
+                        <p>&nbsp;</p>
+                      </div>
+                      <div class="col-lg-4" id="hicks">
+                          <a href="./page2.html">
+                            <img class="img-fluid" id="hicks" src="assets/img/kit/Hicks.jpg">
+                            </a>
+                            <p>&nbsp;</p>
+                          </div>
+                        <div class="col-lg-4" id="hicks">
+                            <a href="./page2.html">
+                              <img class="img-fluid" id="hicks" src="assets/img/kit/Hicks.jpg">
+                              </a>
+                              <p>&nbsp;</p>
+                            </div>
+                    </div>
+
+                    
+                </div>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <div class="row">
+                  <div class="col-lg-12" style="text-align:center;">
+                      <h5 class="description" id="showall" style="color:rgb(40, 54, 48); cursor:pointer;"><b>Show All</b></h5>
+                  </div>
+                </div>
+                <p>&nbsp;</p>
                
     <div id="footer">
     <div class="container" style="padding-top:20px;">
@@ -160,7 +209,7 @@
             </div>
         </div>
     
-    <br />
+    <hr />
     
         <div class="row" style="padding-bottom:20px;">
             <div class="col-lg-12" style="text-align:center;">
@@ -191,34 +240,20 @@
             document.documentElement.scrollTop = 0;
           }
 
-          var slideIndex = 1;
-          showDivs(slideIndex);
+          $("#landscapeshow").on("click",function(){
+            $("[id='hicks']").hide();
+            $("[id='landscape']").show();
+          });
 
-          function plusDivs() {
-            showDivs(slideIndex += 1);
-          }
+          $("#hicksshow").on("click",function(){
+            $("[id='landscape']").hide();
+            $("[id='hicks']").show();
+          });
 
-
-          function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length}
-            for (i = 0; i < x.length; i++) {
-              x[i].style.display = "none";  
-            }
-            x[slideIndex-1].style.display = "block";  
-          }
-
-      
-          var auto_change=function(){
-            showDivs(slideIndex += 1);
-          }
-            
-          setInterval(auto_change, 5000);
-          
-          
-
+          $("#showall").on("click",function(){
+            $("[id='landscape']").show();
+            $("[id='hicks']").show();
+          });
         </script>
 
     <!--   Core JS Files   -->

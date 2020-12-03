@@ -1,0 +1,139 @@
+a {
+  color: #a5a6a7;
+}
+
+a:hover {
+  color: #ac8750;
+  transition: 0.5s ease !important;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.header-contact {
+  border-top: 1px #5f82a9 solid;
+  padding-top: 20px;
+  color: #a5a6a7;
+}
+
+.head-contact-item {
+  display: inline-block;
+  width: 40%;
+}
+
+.head-contact-main-item {
+  font-family: "Neue Helvetica Light";
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0px;
+}
+
+.head-contact-sub-item {
+  font-size: 15px;
+  font-family: "Neue Helvetica Light";
+  font-weight: 100;
+}
+
+.masthead .intro-body .intro-text {
+  font-family: "Neue Helvetica Medium" !important;
+  padding-bottom: 100px;
+  color: #ac8750;
+  font-weight: 500;
+}
+
+.text-capitalize.brand-heading {
+  color: #ac8750;
+  font-weight: 100;
+  font-family: 'Neue Helvetica Ultra Light';
+  margin-bottom: 0px;
+}
+
+.header-social {
+  color: #5f82a9;
+  padding-bottom: 50px;
+}
+
+.social-icon {
+  width: 20%;
+  font-size: 30px;
+}
+
+.social-icon:hover {
+  color: #ac8750;
+  transition: 0.5s ease !important;
+}
+
+.profile-section {
+  padding: 0px;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-twocolumn {
+  display: inline-block;
+  /*padding-top: 100px;*/
+  /*padding-bottom: 100px;*/
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-section h1 {
+  font-size: 20px !important;
+  font-family: "Neue Helvetica Medium";
+}
+
+.profile-section p {
+  font-size: 20px !important;
+  font-family: "Neue Helvetica Thin";
+}
+
+.profile-section-inner {
+  height: 100% !important;
+}
+
+.profile-heading {
+  margin: 0px!important;
+  background-color: #1d1c1c;
+  height: 100%;
+  width: 19%;
+  padding-right: 50px;
+  vertical-align: middle;
+}
+
+.profile-heading h1 {
+  margin-bottom: 0px;
+  text-align: right;
+}
+
+.profile-details {
+  width: 80%;
+  background-color: #212121;
+  padding-left: 50px;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.profile-details-element {
+  text-align: left;
+  padding-bottom: 5px;
+  vertical-align: middle;
+}
+
+.profile-details-element p {
+  margin-bottom: 0px;
+}
+
+.profile-details-element h1 {
+  margin-bottom: 0px;
+}
+
+.footer-copyright {
+  font-family: "Neue Helvetica Light";
+}
+
+.footer-copyright p {
+  font-size: 16px;
+}
+

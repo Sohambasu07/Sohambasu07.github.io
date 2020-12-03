@@ -1,3 +1,17 @@
+/* Fonts Used: Lato, Neue Helvetica (Medium, Thin, Light, Ultra Light) */
+
+html, body, footer, .masthead {
+  background-color: #0c0c16 !important;
+  color: #a5a6a7;
+}
+
+h1, h2, h3, h4, p {
+}
+
+.intro-body {
+  /*background-color: #0c0c16;*/
+}
+
 a {
   color: #a5a6a7;
 }
@@ -38,7 +52,7 @@ a:hover {
 
 .masthead .intro-body .intro-text {
   font-family: "Neue Helvetica Medium" !important;
-  padding-bottom: 100px;
+  margin-bottom: 100px;
   color: #ac8750;
   font-weight: 500;
 }
@@ -51,7 +65,6 @@ a:hover {
 }
 
 .header-social {
-  color: #5f82a9;
   padding-bottom: 50px;
 }
 
@@ -68,25 +81,27 @@ a:hover {
 .profile-section {
   padding: 0px;
   overflow: hidden;
-  position: relative;
 }
 
 .profile-twocolumn {
-  display: inline-block;
-  /*padding-top: 100px;*/
-  /*padding-bottom: 100px;*/
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 .profile-section h1 {
-  font-size: 20px !important;
+  font-size: 20px;
   font-family: "Neue Helvetica Medium";
 }
 
 .profile-section p {
-  font-size: 20px !important;
+  font-size: 20px;
   font-family: "Neue Helvetica Thin";
+}
+
+.psub {
+  font-size: 15px !important;
+  margin-bottom: 10px;
 }
 
 .profile-section-inner {
@@ -95,37 +110,33 @@ a:hover {
 
 .profile-heading {
   margin: 0px!important;
-  background-color: #1d1c1c;
-  height: 100%;
-  width: 19%;
+  background-color: #0e0e18;
   padding-right: 50px;
   vertical-align: middle;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.profile-heading h1 {
+.profile-heading-inner h1 {
   margin-bottom: 0px;
   text-align: right;
 }
 
 .profile-details {
-  width: 80%;
-  background-color: #212121;
+  background-color: #080815;
   padding-left: 50px;
-  height: 100%;
   vertical-align: middle;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.profile-details-element {
+.profile-details-element-inner {
   text-align: left;
   padding-bottom: 5px;
   vertical-align: middle;
 }
 
-.profile-details-element p {
-  margin-bottom: 0px;
-}
-
-.profile-details-element h1 {
+.profile-details-element-inner h1 {
   margin-bottom: 0px;
 }
 

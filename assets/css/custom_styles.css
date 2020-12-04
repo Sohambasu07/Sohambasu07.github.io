@@ -1,4 +1,4 @@
-/* Fonts Used: Lato, Neue Helvetica (Medium, Thin, Light, Ultra Light) */
+/* Fonts Used: Lato, Neue Helvetica (Medium, Thin, Roman, Outline Bold Light, Ultra Light) */
 
 html, body, footer, .masthead {
   background-color: #0c0c16 !important;
@@ -6,10 +6,7 @@ html, body, footer, .masthead {
 }
 
 h1, h2, h3, h4, p {
-}
-
-.intro-body {
-  /*background-color: #0c0c16;*/
+  font-family: "Neue Helvetica Light";
 }
 
 a {
@@ -56,7 +53,7 @@ progress-bar-div {
 }
 
 .intro-row {
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
 .header-contact {
@@ -98,15 +95,19 @@ progress-bar-div {
 }
 
 .header-social {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+}
+
+.social-list-item {
+  display: inline-block;
+  width: 20%;
 }
 
 .social-icon {
-  width: 20%;
   font-size: 30px;
 }
 
-.social-icon:hover {
+.social-list-item a:hover {
   color: #ac8750;
   transition: 0.5s ease !important;
 }
